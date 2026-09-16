@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# Downloaded raw data (large parquet files) — do NOT commit these
+data/raw/
+
+# Sentence-transformer model cache
+.cache/
+*.pt
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Keep the small sample CSVs and results (comment out the next lines
+# if you'd rather not commit them)
+# data/*.csv

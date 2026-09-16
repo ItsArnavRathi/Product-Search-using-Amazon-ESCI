@@ -1,0 +1,16 @@
+# Core data handling
+pandas>=2.0
+numpy
+pyarrow            # needed by pandas to read the ESCI .parquet files
+
+# Ranking methods
+scikit-learn       # TF-IDF vectorizer + cosine similarity
+nltk               # Porter stemmer for preprocessing
+sentence-transformers   # semantic ranking (downloads a small model once)
+
+# Evaluation + interface
+matplotlib         # precision-recall graph
+streamlit          # search web app
+
+# NOTE: BM25 and Reciprocal Rank Fusion are implemented from scratch
+# in src/ranking.py, so no bm25 library is required.
